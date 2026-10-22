@@ -1,0 +1,7 @@
+include .env.example requirements-lock.txt
+recursive-include docs *.md *.json
+recursive-include scripts *.py
+recursive-include tests *.py *.mjs
+recursive-include api/static *.html *.js *.mjs
+recursive-include data/corpus *.md
+include data/eval_cases.jsonl

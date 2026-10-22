@@ -1,0 +1,19 @@
+{"question":"出差住宿费一线城市每晚最多报多少？","gold_doc":"travel.md","expect_keyword":"600","type":"answerable"}
+{"question":"出差结束后多少个工作日提交报销申请？","gold_doc":"travel.md","expect_keyword":"15","type":"answerable"}
+{"question":"高铁可以报销什么座位？","gold_doc":"travel.md","expect_keyword":"二等座","type":"answerable"}
+{"question":"年假申请提前几个工作日提交？","gold_doc":"leave.md","expect_keyword":"3","type":"answerable"}
+{"question":"申请病假需要提供什么材料？","gold_doc":"leave.md","expect_keyword":"诊断证明","type":"answerable"}
+{"question":"公司账号密码至少几位？","gold_doc":"security.md","expect_keyword":"12","type":"answerable"}
+{"question":"工作设备丢失后多久联系 IT 服务台？","gold_doc":"security.md","expect_keyword":"1 小时","type":"answerable"}
+{"question":"访问项目资料需要谁审批？","gold_doc":"security.md","expect_keyword":"项目负责人","type":"answerable"}
+{"question":"公司股票代码是多少？","type":"unanswerable"}
+{"question":"火星表面温度是多少？","type":"unanswerable"}
+{"question":"董事长的私人电话号码是什么？","type":"unanswerable"}
+{"question":"下周的台风路径预报是什么？","type":"unanswerable"}
+{"question":"当月迟到超过多少次后每次扣发绩效奖金？","gold_doc":"attendance.md","expect_keyword":"50","type":"answerable"}
+{"question":"公积金缴纳比例是多少？","gold_doc":"benefits.md","expect_keyword":"12%","type":"answerable"}
+{"question":"公司员工生日礼金是多少？","gold_doc":"benefits.md","expect_keyword":"300","type":"answerable"}
+{"question":"商务招待餐饮标准每人每餐是多少？","gold_doc":"expense.md","expect_keyword":"150","type":"answerable"}
+{"question":"办公系统密码需要每隔多少天更换一次？","gold_doc":"it-support.md","expect_keyword":"90","type":"answerable"}
+{"question":"外部培训费用超过多少需要分管副总审批？","gold_doc":"training.md","expect_keyword":"3000","type":"answerable"}
+{"question":"周末加班按多少倍基本工资计发？","gold_doc":"overtime.md","expect_keyword":"2","type":"answerable"}

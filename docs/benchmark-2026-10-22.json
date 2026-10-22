@@ -1,0 +1,17 @@
+{
+  "chunks": 10000,
+  "dimension": 256,
+  "repeat": 3,
+  "top_k_equal": true,
+  "note": "synthetic corpus; tracemalloc peak, not process RSS; warm cache",
+  "results": {
+    "full_matrix_reference": {
+      "median_ms": 150.3,
+      "tracked_peak_mb": 30.96
+    },
+    "batched_exact": {
+      "median_ms": 114.78,
+      "tracked_peak_mb": 1.63
+    }
+  }
+}

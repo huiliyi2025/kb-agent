@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kb-agent"
+version = "0.2.0"
+description = "A local-first, tenant-scoped RAG and Agent learning project"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1", "uvicorn>=0.30,<1", "httpx>=0.27,<1",
+  "numpy>=1.26,<3", "PyJWT>=2.9,<3", "pydantic>=2.9,<3",
+  "python-multipart>=0.0.18,<1", "pypdf>=5,<7", "defusedxml>=0.7,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1", "build>=1,<2"]
+browser = ["playwright>=1.50,<2"]
+
+[project.scripts]
+kb-agent = "kb_agent.cli:main"
+
+[tool.setuptools]
+packages = ["kb_agent", "kb_agent.api", "kb_agent.core", "kb_agent.gen", "kb_agent.ingest", "kb_agent.retrieval"]
+package-dir = {kb_agent = "."}
+include-package-data = false
+
+[tool.setuptools.package-data]
+kb_agent = ["api/static/*.html", "api/static/*.js", "api/static/*.mjs", "data/corpus/*.md", "data/*.jsonl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+exclude = [".baseline", ".venv", "build"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
